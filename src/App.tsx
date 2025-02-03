@@ -18,8 +18,8 @@ function App() {
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Music Player</h1>
       <SearchBar onSearch={handleSearch} />
-      <SongList songs={songs} onSongSelect={setCurrentSong} />
       {currentSong && <Player song={currentSong} />}
+      <SongList songs={songs} onSongSelect={setCurrentSong} />
     </div>
   )
 }

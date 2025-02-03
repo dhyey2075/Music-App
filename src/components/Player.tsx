@@ -64,7 +64,7 @@ const Player: React.FC<PlayerProps> = ({ song }) => {
         src={song.media_url}
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
-      />
+        />
       <div className="flex items-center mb-2">
         <button onClick={togglePlayPause} className="px-4 py-2 bg-blue-500 text-white rounded mr-2">
           {isPlaying ? "Pause" : "Play"}

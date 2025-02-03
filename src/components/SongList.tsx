@@ -17,6 +17,7 @@ const SongList: React.FC<SongListProps> = ({ songs, onSongSelect }) => {
             className="p-2 border rounded cursor-pointer hover:bg-gray-100"
             onClick={() => onSongSelect(song)}
           >
+            <img src={song.image} height={100} width={100} alt=""  />
             <h3 className="font-medium">{song.song}</h3>
             <p className="text-sm text-gray-600">{song.singers}</p>
           </li>
